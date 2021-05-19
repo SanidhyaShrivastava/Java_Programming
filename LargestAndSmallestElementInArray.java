@@ -7,8 +7,9 @@ public class LargestAndSmallestElementInArray {
 		System.out.print("Enter range of the array: ");
 		int range=scanner.nextInt();
 		int[] array=new int[50];
-		System.out.println("Elements of Array: ");
+		
 		for(int i=0; i<range; i++) {
+			System.out.print("Elements of Array: ");
 			array[i]=scanner.nextInt();
 		}
 		
@@ -19,6 +20,7 @@ public class LargestAndSmallestElementInArray {
 				firstElement=array[i];
 			}
 		}
+		System.out.println("-------------------------------------");
 		System.out.println("Largest Element = "+firstElement);
 		
 		int secondElement=array[0];
