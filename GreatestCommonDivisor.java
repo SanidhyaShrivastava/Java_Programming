@@ -36,7 +36,7 @@ public class GreatestCommonDivisor {
 				greatestCommonDivisor=i;
 			}
 		}
-		System.out.println("Greatest Common of "+num1+" and "+num2+" = "+greatestCommonDivisor);
+		System.out.println("Greatest Common Divisor of "+num1+" and "+num2+" = "+greatestCommonDivisor);
     }
 
 }
