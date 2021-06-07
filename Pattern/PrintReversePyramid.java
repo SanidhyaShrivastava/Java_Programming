@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
-public class PrintPyramid {
+public class PrintReversePyramid {
 
 	public static void main(String[] args) {
 		
 		
 		Scanner scanner=new Scanner(System.in);
-		System.out.print("Number of rows to print to triangle: ");
+		System.out.print("Number of rows to print to reverse triangle: ");
 		int rows= scanner.nextInt();
 		scanner.close();
 		
@@ -17,27 +17,20 @@ public class PrintPyramid {
 		System.out.println("========================================");
 		
 		for (int i = 0; i < rows; i++) {
-            for (int j =0; j<=rows-i ; j++) {
+            for (int j =0; j<=i; j++) {
  
                 System.out.print(" ");
             }
             
-            for(int k=0; k<=i; k++) {
+            for(int k=0; k<=rows-i-1; k++) {
 				System.out.print(star + " ");
 				
 			}
 			System.out.println();
 		}
-		
-		
-		
-		
-			
-		
-
 	
 	
 	
 	}
 
-	}
+}
