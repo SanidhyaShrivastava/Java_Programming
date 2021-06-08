@@ -6,7 +6,7 @@ public class PrintPyramid {
 		
 		
 		Scanner scanner=new Scanner(System.in);
-		System.out.print("Number of rows to print to triangle: ");
+		System.out.print("Number of rows to print Pyramid: ");
 		int rows= scanner.nextInt();
 		scanner.close();
 		

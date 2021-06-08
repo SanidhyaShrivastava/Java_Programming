@@ -6,7 +6,7 @@ public class PrintReversePyramid {
 		
 		
 		Scanner scanner=new Scanner(System.in);
-		System.out.print("Number of rows to print to reverse triangle: ");
+		System.out.print("Number of rows to print reverse Pyramid: ");
 		int rows= scanner.nextInt();
 		scanner.close();
 		
