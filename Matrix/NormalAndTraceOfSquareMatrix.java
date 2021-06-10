@@ -11,11 +11,12 @@ public class NormalAndTraceOfSquareMatrix {
 		int[][] matrix=new int[rowsOrColumn][rowsOrColumn];
 		double squareOfMatrix=0;
 		double sumofElements=0;
-		
+		System.out.println("===========================");
 //		==============Input for matrix====================		
 		System.out.println("Input for Matrix: ");
 		for(int i=0; i<rowsOrColumn; i++) {
 			for(int j=0; j<rowsOrColumn; j++) {
+				System.out.print("Enter element at position ["+(i+1)+(j+1)+"]: ");
 				matrix[i][j]=scanner.nextInt();
 				squareOfMatrix=matrix[i][j] * matrix[i][j];
 				sumofElements +=squareOfMatrix;
@@ -31,7 +32,7 @@ public class NormalAndTraceOfSquareMatrix {
 		System.out.println("==============Matrix============== ");
 		for(int i=0; i<rowsOrColumn; i++) {
 			for(int j=0; j<rowsOrColumn; j++) {
-				System.out.print(matrix[i][j]+ "\t");
+				System.out.print(matrix[i][j]+ "  ");
 			}
 			System.out.println();
 		}

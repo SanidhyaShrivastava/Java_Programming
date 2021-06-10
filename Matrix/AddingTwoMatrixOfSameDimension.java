@@ -18,6 +18,7 @@ public class AddingTwoMatrixOfSameDimension {
 		
 		for(int i=0; i<rows; i++) {
 			for(int j=0; j<column; j++) {
+				System.out.print("Enter element at position ["+(i+1)+(j+1)+"]: ");
 				firstMatrix[i][j]=scanner.nextInt();
 			}
 		}
@@ -29,6 +30,7 @@ public class AddingTwoMatrixOfSameDimension {
 		int[][] secondMatrix=new int[rows][column];
 		for(int i=0; i<rows; i++) {
 			for(int j=0; j<column; j++) {
+				System.out.print("Enter element at position ["+(i+1)+(j+1)+"]: ");
 				secondMatrix[i][j]=scanner.nextInt();
 			}
 		}
@@ -52,7 +54,7 @@ public class AddingTwoMatrixOfSameDimension {
 		System.out.println("===========Addition of Matrix========");
 		for(int i=0; i<rows; i++) {
 			for(int j=0; j<column; j++) {
-				System.out.print(sum[i][j]+"\t");
+				System.out.print(sum[i][j]+"  ");
 			}
 			System.out.println();
 		}

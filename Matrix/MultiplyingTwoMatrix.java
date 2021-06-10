@@ -15,24 +15,26 @@ public class MultiplyingTwoMatrix {
 		int column=scanner.nextInt();
 		
 		
-		
+		System.out.println("==================================");
 // 		================Input for First Matrix=========================
 		System.out.println("Input for First Matrix: ");
 		int[][] firstMatrix=new int[rows][column];
 		
 		for(int i=0; i<rows; i++) {
 			for(int j=0; j<column; j++) {
+				System.out.print("Enter element at position ["+(i+1)+(j+1)+"]: ");
 				firstMatrix[i][j]=scanner.nextInt();
 			}
 		}
 //		================================================================			
 		
-		
+		System.out.println("=======================================");
 //		==============Input for Second Matrix=======================		
 		System.out.println("Input for Second Matrix: ");
 		int[][] secondMatrix=new int[rows][column];
 		for(int i=0; i<rows; i++) {
 			for(int j=0; j<column; j++) {
+				System.out.print("Enter element at position ["+(i+1)+(j+1)+"]: ");
 				secondMatrix[i][j]=scanner.nextInt();
 			}
 		}
@@ -44,7 +46,7 @@ public class MultiplyingTwoMatrix {
 		System.out.println("==========First Matrix============");
 		for(int i=0; i<rows; i++) {
 			for(int j=0; j<column; j++) {
-				System.out.print(firstMatrix[i][j]+"\t");
+				System.out.print(firstMatrix[i][j]+"  ");
 			}
 			System.out.println();
 		}
@@ -55,7 +57,7 @@ public class MultiplyingTwoMatrix {
 		System.out.println("============Second Matrix==========");
 		for(int i=0; i<rows; i++) {
 			for(int j=0; j<column; j++) {
-				System.out.print(secondMatrix[i][j]+"\t");
+				System.out.print(secondMatrix[i][j]+"  ");
 			}
 			System.out.println();
 		}
@@ -79,7 +81,7 @@ public class MultiplyingTwoMatrix {
 		System.out.println("===========Multiplication============= ");
 		for(int i=0; i<rows; i++) {
 			for(int j=0; j<column; j++) {
-				System.out.print(multiply[i][j]+"\t");
+				System.out.print(multiply[i][j]+"  ");
 			}
 			System.out.println();
 		}
