@@ -15,7 +15,7 @@ public class MultiplyingTwoMatrix {
 		int column=scanner.nextInt();
 		
 		
-		System.out.println("==================================");
+		System.out.println("=================================="); 
 // 		================Input for First Matrix=========================
 		System.out.println("Input for First Matrix: ");
 		int[][] firstMatrix=new int[rows][column];
