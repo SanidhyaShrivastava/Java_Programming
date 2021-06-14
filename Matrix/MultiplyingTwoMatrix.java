@@ -64,7 +64,7 @@ public class MultiplyingTwoMatrix {
 //		=======================================================		
 		
 		
-//		=====================Multiplication============================
+//		=====================Multiplication============================ 
 		
 		int[][] multiply= new int[rows][column];
 		for(int i=0; i<rows; i++) {
