@@ -14,9 +14,9 @@ public class HollowRectangle {
 		
 		System.out.println("===========================================");	
 		
-		for(int i=0; i<=rows; i++) {
-			for(int j=0; j<=column; j++){
-				if(i==0 || i==rows|| j==0 || j==column) {
+		for(int i=1; i<=rows; i++) {
+			for(int j=1; j<=column; j++){
+				if(i==1 || i==rows|| j==1 || j==column) {
 					System.out.print(star);
 					
 				}else {

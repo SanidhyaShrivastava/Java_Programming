@@ -11,12 +11,12 @@ public class HollowHalfPyramid {
 		String star="*";
 		System.out.println("=======================================");
 //		=====================================================
-		for(int i=0; i<=rows; i++){
-			for(int j=0; j<=rows-i; j++) {
+		for(int i=1; i<=rows; i++){
+			for(int j=1; j<=rows-i; j++) {
 				System.out.print(" ");
 			}
-			for(int k=0; k<=i; k++) {
-				if(i==0 || i==rows || k==0 || k==i) {
+			for(int k=1; k<=i; k++) {
+				if(i==1 || i==rows || k==1 || k==i) {
 					System.out.print(star);
 				}else {
 					System.out.print(" ");

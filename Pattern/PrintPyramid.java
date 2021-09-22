@@ -16,13 +16,13 @@ public class PrintPyramid {
 		
 		System.out.println("========================================");
 		
-		for (int i = 0; i < rows; i++) {
-            for (int j =0; j<=rows-i ; j++) {
+		for (int i = 1; i <=rows; i++) {
+            for (int j =1; j<=rows-i ; j++) {
  
                 System.out.print(" ");
             }
             
-            for(int k=0; k<=i; k++) {
+            for(int k=1; k<=i; k++) {
 				System.out.print(star + " ");
 				
 			}

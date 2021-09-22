@@ -12,8 +12,8 @@ public class PyramidTiltedToLeft {
 		
 		System.out.println("========================================");
 		
-		for(int i=0; i<=rows; i++) {
-			for(int j=0; j<=i; j++) {
+		for(int i=1; i<=rows; i++) {
+			for(int j=1; j<=i; j++) {
 				System.out.print(star + " ");
 				
 				
@@ -23,8 +23,8 @@ public class PyramidTiltedToLeft {
 		
 
 		
-		for(int i=rows; i>=0; i--) {
-			for(int j=0; j<=i-1; j++) {
+		for(int i=rows; i>=1; i--) {
+			for(int j=1; j<=i; j++) {
 				System.out.print(star+" ");
 			}
 			System.out.println();

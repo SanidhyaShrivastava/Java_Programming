@@ -11,22 +11,22 @@ public class RightArrow {
 		String star="*";
 		System.out.println("=======================================");
 //		=====================================================
-		for(int i=0; i<=rows; i++) {
-			for(int j=0; j<=i*2; j++) {
+		for(int i=1; i<=rows; i++) {
+			for(int j=1; j<=i*2; j++) {
 				System.out.print(" ");
 			}
-			for(int k=0; k<=rows-i; k++) {
+			for(int k=1; k<=rows-i+1; k++) {
 				System.out.print(star);
 			}
 			System.out.println();
 		}
 //		======================================================
 	
-		for(int i=0; i<=rows; i++) {
-			for(int j=0; j<=(rows-i)*2; j++) {
+		for(int i=rows; i>=1; i--) {
+			for(int j=1; j<=i*2; j++) {
 				System.out.print(" ");
 			}
-			for(int k=0; k<=i; k++) {
+			for(int k=1; k<=rows-i+1; k++) {
 				System.out.print(star);
 			}
 			System.out.println();

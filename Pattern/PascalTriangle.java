@@ -8,30 +8,34 @@ public class PascalTriangle {
 		int rows= scanner.nextInt();
 		scanner.close();
 //		================================== Formula used in Pascal triangle is combination formula i.e. nCr  ============================
-		int number=1;
+		
 		System.out.println("========================================");
 		
-		for (int i = 0; i < rows; i++) {
-            for (int space =0; space<=rows-i; space++) {
- 
-                System.out.print(" ");
-            }
-            
-            for(int k=0; k<=i; k++) {
-            	
-            	if (k==0||i==0)
-                    number=1;
-                else
-                	 number= number*(i-k+1)/k;
-            	 System.out.print(number+" ");
-				
-				
+		for(int i=0; i<rows; i++){
+			
+			for(int k=0; k<=rows-i;k++) {
+				System.out.print(" ");
 			}
-			System.out.println();
-		}
+			
+	        for(int j=0; j<=i; j++){
+	            System.out.print(factorial(i)/(factorial(i-j)*factorial(j))+" ");
+	        }
+	        System.out.println();
+	    }
 	
 	
 	
+	}
+	
+	public static int factorial(int num) {
+		
+		    int fact=1;
+
+		    for(int i=1; i<=num; i++){
+		        fact*=i;
+		    }
+		    return fact;
+		
 	}
 
 }

@@ -16,15 +16,15 @@ public class ButterflyProgram {
 		
 		System.out.println("=====================================================");
 //		============================= For Upper Half======================================		
-		for(int i=0; i<=rows-1; i++) {
-			for(int j=0; j<=i; j++) {
+		for(int i=1; i<=rows; i++) {
+			for(int j=1; j<=i; j++) {
 				System.out.print(star);
 			}
 			
-			for(int k=0; k<=(rows-i)*2; k++) {
+			for(int k=1; k<=(rows-i)*2; k++) {
 				System.out.print(" ");
 			}
-			for(int l=0; l<=i; l++) {
+			for(int l=1; l<=i; l++) {
 				System.out.print(star);
 			}System.out.println();
 		}
@@ -32,17 +32,17 @@ public class ButterflyProgram {
 	
 //		============================== For Lower Half=====================================
 		
-		for(int i=0; i<=rows; i++) {
-			for(int j=0; j<=rows-i; j++) {
+		for(int i=rows; i>=1; i--) {
+			for(int j=1; j<=i; j++) {
 				System.out.print(star);
 			}
-			for(int k=0; k<=i*2; k++) {
+			
+			for(int k=1; k<=(rows-i)*2; k++) {
 				System.out.print(" ");
 			}
-			for(int l=0; l<=rows-i; l++) {
+			for(int l=1; l<=i; l++) {
 				System.out.print(star);
-			}
-			System.out.println();
+			}System.out.println();
 		}
 //		==================================================================================
 	

@@ -5,7 +5,7 @@ public class PrintRhombus {
 	public static void main(String[] args) {
 		
 		Scanner scanner=new Scanner(System.in);
-		System.out.print("Number of rows to print reverse Pyramid: ");
+		System.out.print("Number of rows to print Rhombus: ");
 		int rows= scanner.nextInt();
 		scanner.close();
 		
