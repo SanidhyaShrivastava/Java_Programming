@@ -4,13 +4,13 @@ public class LeftArrow {
 
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(System.in);
-		System.out.print("Number of rows to print Left Arrow: ");
+		System.out.print("Number of rows to pri7nt Left Arrow: ");
 		int rows= scanner.nextInt();
 		scanner.close();
 		
 		String star="*";
 		System.out.println("=======================================");
-//		=====================================================
+//		========================================================
 		for(int i=0; i<=rows; i++) {
 			for(int j=0; j<=rows-i; j++) {
 				System.out.print(" ");
